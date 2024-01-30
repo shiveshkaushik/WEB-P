@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("backg.jpeg");
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .div-1,
+        .div-2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div-1 {
+            padding: 10%;
+            font-size: 44px;
+            text-align: center; 
+        }
+
+        .proPic {
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .aboutLink {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px; /* Added margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-1">
+            <p>Hi there,</p>
+            <p>I'm Shivesh Kaushik</p>
+            <p>I'm an enthusiastic developer!</p>
+            <a href="about.html" class="aboutLink">About Me</a>
+        </div>
+        <div class="div-2">
+            <img src="profilepic.jpg" alt="profile image" class="proPic">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("backg.jpeg");
+                background-size: cover;
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                color: black;
+            }
+
+            table {
+                width: 70%;
+                margin: 50px auto;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 20px;
+                text-align: center;
+            }
+
+            th {
+                background-color: seagreen;
+                color: white;
+            }
+
+            form {
+                width: 50%;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                background-color: seagreen;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Contact</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Shivesh Kaushik</td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td>9342344235</td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>shiveshkaushik04@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Address</td>
+                <td>C-74 Shiv Marg, Jaipur</td>
+            </tr>
+    
+            <tr>
+                <td>Pincode</td>
+                <td>302019</td>
+            </tr>
+        </table>
+
+        <form action="" method="post">
+            <h2>Contact Me</h2>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
